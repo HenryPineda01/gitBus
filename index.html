@@ -1,12 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Login</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="/css/login.css">	
 </head>
 <body>
-    <h1>Git prueba</h1>
+    
+    <script>
+    
+    </script>
+<div class="caja1">
+<form  method="post"  action="/auth" id="formulario">
+<div class="formtlo">Login</div>
+<div class="ub1">&#128273; Ingresar usuario</div>
+<input type="text" name="user" placeholder="" required>
+<div class="ub1">&#128274; Ingresar password</div>
+
+<input type="password" name="txtpassword" id="txtpassword" placeholder="" required>
+
+<div class="ub1">
+<input type="checkbox" onclick="verpassword()" >Mostrar contraseña
+ </div>
+<div align="center">
+  
+    <!-- <h5 onclick="location.href='admin';">Vista Admin</h5> -->
+<!-- <input type="submit" id="m" onclick="mapa()" value="Facebook"> -->
+<input type="submit" value="Ingresar">
+<input type="submit" onclick="registro()" value="Registro">
+<input type="submit" onclick="Tablas()"  value="Admin">
+<input type="reset" value="Cancelar">
+
+</div>
+</form>
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
+<script></script>
+<script>
+  //  function mapa(){
+  //           location.href="mapa";
+  //       }
+    function Tablas(){
+            location.href="admin";
+        }
+   function registro(){
+            location.href="register";
+        }
+
+  function verpassword(){
+      var tipo = document.getElementById("txtpassword");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else
+	  {
+          tipo.type = "password";
+      }
+  }
+  
+</script>
+<!-- <script src="/socket.io/socket.io.js"></script>
+
+<script>
+  var socket = io();
+
+  var messages = document.getElementById('messages');
+  var form = document.getElementById('form');
+  var input = document.getElementById('input');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (input.value) {
+      socket.emit('chat message', input.value);
+      input.value = '';
+    }
+  });
+
+  socket.on('chat message', function(msg) {
+    var item = document.createElement('li');
+    item.textContent = msg;
+    messages.appendChild(item);
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+</script> -->
+<!-- <script src="/socket.io/socket.io.js"></script>
+
+<script src="http://code.jquery.com/jquery-3.4.1min.js"></script>
+<script>
+    $(function(){
+        var socket = io();
+        $('form').submit(function(e){
+            socket.emit('mensaje', $('#m').val());
+            $('#m').val('');
+            return false;
+        })
+    })
+</script> -->
 </html>
