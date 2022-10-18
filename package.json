@@ -1,0 +1,27 @@
+{
+  "name": "leaflet_soket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "employe":"gh-pages -d .",
+    "dev": "nodemon src/index.js",
+    "start": "nodemon src/mysql.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.1",
+    "gh-pages": "^4.0.0",
+    "mysql": "^2.18.1",
+    "ngrok": "^4.3.3",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
