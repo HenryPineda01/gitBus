@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "employe":"gh-pages -d .",
+    "employe": "gh-pages -d .",
     "dev": "nodemon src/index.js",
     "start": "nodemon src/mysql.js"
   },
@@ -19,7 +19,8 @@
     "gh-pages": "^4.0.0",
     "mysql": "^2.18.1",
     "ngrok": "^4.3.3",
-    "socket.io": "^4.5.1"
+    "socket.io": "^4.5.1",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
