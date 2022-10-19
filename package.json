@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "employe":"gh-pages -d .",
     "dev": "nodemon src/index.js",
     "start": "nodemon src/mysql.js"
   },
