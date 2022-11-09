@@ -100,12 +100,12 @@ conn.query('select * from usuario where admin = ?', [user],(error,results)=>{
       //console.log(results[0].pass,+ pass)
       
     if (results.length == 1 && pass === results[0].pass){
-        res.render('index',);
-       
-        //console.log('Datos validados')
+        res.render('index');
     
     }else{
+        // alert('Contraseña y Usuario Incorrecto');
         res.render('login');
+        
         // console.log('datos no estan en la base')
         // no funciona alert('Datos Validados')
     }
